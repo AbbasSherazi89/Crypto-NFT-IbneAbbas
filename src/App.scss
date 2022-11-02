@@ -1,0 +1,111 @@
+//////////////////////////////////////////////////////////Media Query////////////////////////////////////////////////////////////////
+
+@media screen and (max-width:720px) {
+  .navbar{
+    .rounded{
+      display: none;
+    }
+    .vertical-line{
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////Navbar////////////////////////////////////////////////////////////////
+.navbar{
+  background-color: #0B1426;
+  color: white !important;
+  .nav-link{
+    color: white !important;
+    font-weight: 600;
+  }
+.input-group{
+  margin-left: 2rem;
+  width: 20rem;
+}
+.input-group:hover{
+ background-color: rgb(33, 32, 32);
+ color: white;
+}
+.rounded{
+  border: 1px solid white;
+  border-radius: 40px !important;
+  background-color: transparent;
+  color: white;
+}
+.rounded:hover{
+  border: 1px solid rgb(5, 169, 239);
+}
+.vertical-line{
+  font-size: larger;
+  color: grey;
+  padding: 0px 15px;
+}
+}
+
+
+
+//////////////////////////////////////////////////////////Sidebar////////////////////////////////////////////////////////////////
+
+.sidebar{
+  background-color: #0B1426;
+  color: white;
+  width: 300px;
+  height: 90vh;
+  position: absolute;
+  overflow: auto;
+ 
+}
+
+//////////////////////////////////////////////////////////Hero Top////////////////////////////////////////////////////////////////
+
+.hero-top{
+  background-color: #0B1426;
+  color: white;
+
+  .card1{
+    background-image: url('./Media/original1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    margin: 0px;
+
+    .card-footer {
+      align-items: center;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+      padding-top: 24px;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 72.92%) 0% 0% / cover no-repeat;
+     
+  }
+  }
+}
+
+//////////////////////////////////////////////////////////Hero////////////////////////////////////////////////////////////////
+
+.hero{
+  background-color: #0B1426;
+  color: white;
+  width: calc(100% - 300px);
+  float: right;
+  position: relative;
+}
+
+
+//////////////////////////////////////////////////////////Footer////////////////////////////////////////////////////////////////
+.footer-container{
+  background-color: #0B1426;
+  color: white;
+  width: calc(100% - 300px);
+  float: right;
+  position: relative;
+}
