@@ -1,109 +1,261 @@
 //////////////////////////////////////////////////////////Media Query////////////////////////////////////////////////////////////////
 
-@media screen and (max-width:720px) {
-  .navbar{
-    .rounded{
+@media screen and (max-width: 720px) {
+  .navbar {
+    .rounded {
       display: none;
     }
-    .vertical-line{
+    .vertical-line {
       display: none;
     }
   }
 }
 
-
-
-
-
 //////////////////////////////////////////////////////////Navbar////////////////////////////////////////////////////////////////
-.navbar{
-  background-color: #0B1426;
+.navbar {
+  background-color: #0b1426;
   color: white !important;
-  .nav-link{
+  .nav-link {
     color: white !important;
     font-weight: 600;
   }
-.input-group{
-  margin-left: 2rem;
-  width: 20rem;
+  .nav-link:hover {
+    color: rgb(56, 56, 240) !important;
+  }
+  .input-group {
+    margin-left: 2rem;
+    width: 20rem;
+  }
+  .input-group:hover {
+    background-color: rgb(33, 32, 32);
+    color: white;
+  }
+  .rounded {
+    border: 1px solid white;
+    border-radius: 40px !important;
+    background-color: transparent;
+    color: white;
+  }
+  .rounded:hover {
+    border: 1px solid rgb(5, 169, 239);
+  }
+  .vertical-line {
+    font-size: larger;
+    color: grey;
+    padding: 0px 15px;
+  }
 }
-.input-group:hover{
- background-color: rgb(33, 32, 32);
- color: white;
-}
-.rounded{
-  border: 1px solid white;
-  border-radius: 40px !important;
-  background-color: transparent;
-  color: white;
-}
-.rounded:hover{
-  border: 1px solid rgb(5, 169, 239);
-}
-.vertical-line{
-  font-size: larger;
-  color: grey;
-  padding: 0px 15px;
-}
-}
-
-
 
 //////////////////////////////////////////////////////////Sidebar////////////////////////////////////////////////////////////////
 
-.sidebar{
-  background-color: #0B1426;
+.sidebar {
+  background-color: #0b1426;
   color: white;
   width: 300px;
   height: 90vh;
   position: absolute;
-  overflow: auto;
- 
+  // overflow: auto;
+  .bOQEtf {
+    border-right: 0px;
+    width: 260px;
+  }
+  .fpTHfu {
+    background: transparent !important;
+    font-weight: 700;
+  }
+  .sub-menu-content {
+    background: transparent !important;
+    font-weight: 700;
+  }
+  .lkTtqM:hover {
+    background-color: transparent;
+  }
+  a:hover {
+    color: white;
+  }
 }
 
 //////////////////////////////////////////////////////////Hero Top////////////////////////////////////////////////////////////////
 
-.hero-top{
-  background-color: #0B1426;
+.hero-top {
+  background-color: #0b1426;
   color: white;
 
-  .card1{
-    background-image: url('./Media/original1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 20rem;
-    margin: 0px;
-
-    .card-footer {
+  .card {
+    overflow: hidden;
+    position: relative;
+    transition: all 1s;
+    --bs-card-border-width: 0px;
+    .card-ft {
       align-items: center;
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-bottom: 8px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 12px;
       padding-top: 24px;
       width: 100%;
       position: absolute;
       bottom: 0px;
-      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 72.92%) 0% 0% / cover no-repeat;
-     
+      display: flex;
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 72.92%) 0%
+        0% / cover no-repeat;
+    }
+    .card-body {
+      padding: 0;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 0;
+    }
+    .circle {
+      font-size: 30px;
+      background-color: rgb(0, 140, 255);
+      border-radius: 50%;
+    }
+    .rounded-circle {
+      width: 50px;
+      height: 50px;
+    }
   }
+  .card:hover {
+    transform: scale(1.2);
+  }
+  .card1 {
+    background-image: url("./Media/original1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card2 {
+    background-image: url("./Media/original2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card3 {
+    background-image: url("./Media/original3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card4 {
+    background-image: url("./Media/original4.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card5 {
+    background-image: url("./Media/original5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card6 {
+    background-image: url("./Media/original6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card7 {
+    background-image: url("./Media/original7.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
+  }
+  .card8 {
+    background-image: url("./Media/original8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    height: 15rem;
   }
 }
 
 //////////////////////////////////////////////////////////Hero////////////////////////////////////////////////////////////////
 
-.hero{
-  background-color: #0B1426;
+.hero {
+  background-color: #0b1426;
   color: white;
   width: calc(100% - 300px);
   float: right;
   position: relative;
+  .top-row {
+    display: flex;
+    .top-row-btns {
+      width: 10rem;
+      height: 3.3rem;
+      margin-left: 10px;
+      color: white;
+      font-weight: 700;
+      border: 1px solid white;
+      border-radius: 40px;
+    }
+  }
+
+  .card {
+    height: 30rem;
+    border-radius: 20px;
+    .card-img-top {
+      border-radius: 20px 20px 0px 0px;
+    }
+    .card-logo {
+      border-radius: 40px;
+    }
+    .logo-checked {
+      font-size: 25px;
+      color: blue;
+    }
+    .bg-danger-row{
+      background-color:#F7F9FA;
+      padding: 20px 10px;
+    }
+    .card-div{
+      margin-top: 1rem;
+      height: 4rem;
+      width: 10rem;
+      border-radius: 10px;
+      border: 0;
+    }
+    .card-footer-text {
+      font-size: 12px;
+      font-weight: 700;
+      // margin: 0;
+    }
+    .bid-btn{
+      background-color: #DBEFFD;
+      color: rgb(45, 173, 247);
+      font-weight: 700;
+      border: 0;
+      height: 3rem;
+      width: 5rem;
+    }
+    .footer-row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
-
 //////////////////////////////////////////////////////////Footer////////////////////////////////////////////////////////////////
-.footer-container{
-  background-color: #0B1426;
+.footer-container {
+  background-color: #0b1426;
   color: white;
   width: calc(100% - 300px);
   float: right;

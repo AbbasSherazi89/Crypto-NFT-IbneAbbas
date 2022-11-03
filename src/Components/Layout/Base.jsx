@@ -1,17 +1,20 @@
-import React from 'react'
-import Dashboard from './Dashboard'
-import Footer from './Footer'
-import Header from './Header'
+import React from "react";
+import Dashboard from "./Dashboard";
+import Footer from "./Footer";
+import Header from "./Header";
+import { ProSidebarProvider } from "react-pro-sidebar";
 
 const Base = (props) => {
   return (
     <div>
-      <Header/>
-      <Dashboard/>
-        {props.children}
-      <Footer/>
+      <Header />
+      <ProSidebarProvider>
+        <Dashboard />
+      </ProSidebarProvider>
+      {props.children}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Base
+export default Base;

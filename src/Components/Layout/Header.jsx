@@ -4,7 +4,7 @@ import HeroTop from "../Elements/HeroTop";
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg py-4 px-4">
+      <nav className="navbar navbar-expand-lg sticky-top py-4 px-4">
         
           <Link to="/">
             <div>
