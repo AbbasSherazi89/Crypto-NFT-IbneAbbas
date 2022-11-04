@@ -1,5 +1,4 @@
 import React from "react";
-import { BsCheckCircle } from "react-icons/bs";
 import { HeroCardsData } from "./HeroCardsData";
 const Hero = () => {
   return (
@@ -14,29 +13,36 @@ const Hero = () => {
             Sort By
           </button>
         </div>
-
         {/* Card data */}
-        {HeroCardsData.map((item, index) => {
-          return (
-            <div className="col-md-3">
-              <div key={index} className="card ">
-                {item.topImage} 
-                <div className="card-body">
-                  {item.logo}
-                  <span className="text-dark ms-2">{item.logoText}</span>
-                  <span className="logo-checked ms-2">{item.chekedCircle}</span>
-                  
-                  <div className="text-dark d-flex footer-row">
-                    {item.footerdiv}
-                    {item.footerbtn}
+        <div className="container">
+          <div className="row hero-row">
+            {HeroCardsData.map((item, index) => {
+              return (
+                <div className="col-md-3">
+                  <div key={index} className="card ">
+                    {item.topImage}
+                    <div className="card-body">
+                      {item.logo}
+                      <span className="text-dark ms-2">{item.logoText}</span>
+                      <span className="logo-checked ms-2">
+                        {item.chekedCircle}
+                      </span>
+                      <div className="text-dark fw-bold py-3">
+                        {item.title}
+                        <span className="ms-3">{item.titlelogo}</span>
+                      </div>
+                      <span className="text-dark ">{item.time}</span>
+                      <div className="text-dark d-flex footer-row">
+                        {item.footerdiv}
+                        {item.footerbtn}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          );
-        })}
-
-
+              );
+            })}
+          </div>
+        </div>
       </div>
     </>
   );

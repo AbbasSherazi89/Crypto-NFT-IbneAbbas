@@ -52,12 +52,12 @@
   background-color: #0b1426;
   color: white;
   width: 300px;
-  height: 90vh;
+  height: 100%;
   position: absolute;
   // overflow: auto;
   .bOQEtf {
     border-right: 0px;
-    width: 260px;
+    width: 100%;
   }
   .fpTHfu {
     background: transparent !important;
@@ -208,14 +208,19 @@
     }
   }
 
+ 
   .card {
+    margin-top: 1rem;
     height: 30rem;
     border-radius: 20px;
+    border: 0;
     .card-img-top {
       border-radius: 20px 20px 0px 0px;
     }
     .card-logo {
       border-radius: 40px;
+      height: 40px;
+      width: 40px;
     }
     .logo-checked {
       font-size: 25px;
@@ -227,28 +232,31 @@
     }
     .card-div{
       margin-top: 1rem;
-      height: 4rem;
+      height: 3.2rem;
       width: 10rem;
       border-radius: 10px;
       border: 0;
+      padding: 2px;
     }
     .card-footer-text {
       font-size: 12px;
       font-weight: 700;
-      // margin: 0;
+      margin-top: 0;
+      margin-bottom: 3px;
     }
     .bid-btn{
       background-color: #DBEFFD;
       color: rgb(45, 173, 247);
       font-weight: 700;
       border: 0;
-      height: 3rem;
-      width: 5rem;
+      height: 2.8rem;
+      width: 4rem;
     }
     .footer-row{
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
     }
   }
 }
