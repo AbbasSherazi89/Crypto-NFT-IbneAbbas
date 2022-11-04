@@ -1,6 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
+import {Link, useNavigate} from "react-router-dom"
 import { HeroCardsData } from "./HeroCardsData";
 const Hero = () => {
+  // const [data, setData] = useState();
+  
+  const navigate = useNavigate();
+
+  const NavigateTo=()=>{
+    navigate('/carddata', {state:{id:1, name:'Abbas'}});
+  }
   return (
     <>
       <div className="hero py-4 px-4">
@@ -19,7 +27,10 @@ const Hero = () => {
             {HeroCardsData.map((item, index) => {
               return (
                 <div className="col-md-3">
-                  <div key={index} className="card ">
+                  <Link to={`/carddata/${item.id}`}>
+                  <div key={index} className="card " 
+                  // onClick={()=> NavigateTo()}
+                  >
                     {item.topImage}
                     <div className="card-body">
                       {item.logo}
@@ -38,6 +49,8 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
+                  
                 </div>
               );
             })}
