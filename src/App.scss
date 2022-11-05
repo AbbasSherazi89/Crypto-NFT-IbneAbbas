@@ -88,7 +88,6 @@
 .hero-top {
   background-color: #0b1426;
   color: white;
-
   .card {
     overflow: hidden;
     position: relative;
@@ -195,12 +194,36 @@
   }
 }
 
-//////////////////////////////////////////////////////////Hero////////////////////////////////////////////////////////////////
-.carddata{
-  background-color: #0b1426;
-  color: white;
+//////////////////////////////////////////////////////////Card Data////////////////////////////////////////////////////////////////
+.card-data{
   width: calc(100% - 300px);
+  float: right;
+  position: relative;
+  .top-icons{
+    display: flex;
+    margin-top: 25px;
+    .icons{
+      font-size: 35px;
+    }
+  }
+  .cr-icon{
+    font-size: 20px;
+  }
+  .card-logo {
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+  }
+  .copy-icon{
+    font-size: 20px;
+  }
+  a{
+    color: #0b1426;
+  }
 }
+
+
+//////////////////////////////////////////////////////////Hero////////////////////////////////////////////////////////////////
 
 .hero {
   background-color: #0b1426;
@@ -221,15 +244,20 @@
     }
   }
 
+  a{
+    text-decoration: none;
+  }
+  .card-img-top {
+    border-radius: 20px 20px 0px 0px;
+    // width: 10rem;
+  }
  
   .card {
     margin-top: 1rem;
     height: 30rem;
     border-radius: 20px;
     border: 0;
-    .card-img-top {
-      border-radius: 20px 20px 0px 0px;
-    }
+   
     .card-logo {
       border-radius: 40px;
       height: 40px;

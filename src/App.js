@@ -12,7 +12,9 @@ function App() {
         <Base>
           <Routes>
             <Route index path="/" element={<Home />} />
-            <Route index path="/carddata" element={<CardsData />} />
+            {/* <Route index path="/carddata" element={<CardsData />} /> */}
+            <Route index path="/carddata/:id" element={<CardsData />} />
+
           </Routes>
         </Base>
       </BrowserRouter>

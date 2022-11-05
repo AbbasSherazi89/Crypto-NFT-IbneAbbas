@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroTop from "../Elements/HeroTop";
+// import HeroTop from "../Elements/HeroTop";
 const Header = () => {
   return (
     <>
@@ -85,7 +85,7 @@ const Header = () => {
             </ul>
           </div>
       </nav>
-      <HeroTop/>
+      {/* <HeroTop/> */}
     </>
   );
 };

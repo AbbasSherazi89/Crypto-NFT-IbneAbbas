@@ -6,12 +6,12 @@ export const HeroCardsData = [
   {
     id:1,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/29c02cf8-e427-41da-877c-bdb06b2d0f05/original.gif"
+      <img className="img-fluid card-img-top" src="assets/original1.gif"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/6f1bc1d8-8e81-4640-85fe-20e8bd845be6/original.png?d=sm-logo"
+      <img className="img-fluid card-logo" src="assets/original11.png"
         alt=""
       />
     ),
@@ -37,12 +37,12 @@ export const HeroCardsData = [
   {
     id:2,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/113b30c6-e9bd-4d22-bf5d-efc659a7139c/original.gif"
+      <img className="img-fluid card-img-top"  src="assets/original2.gif"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/6f1bc1d8-8e81-4640-85fe-20e8bd845be6/original.png?d=sm-logo"
+      <img className="img-fluid card-logo" src="assets/original11.png"
         alt=""
       />
     ),
@@ -68,12 +68,12 @@ export const HeroCardsData = [
   {
     id:3,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/8f83c428-5fd6-4a82-b269-49f4027ce30f/original.png?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original3.png"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/127596c6-c669-496e-9337-01e1547d703b/original.png"
+      <img className="img-fluid card-logo" src="assets/original12.png"
         alt=""
       />
     ),
@@ -99,12 +99,12 @@ export const HeroCardsData = [
   {
     id:4,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/4e8df72f-ebac-4d28-98d2-bd441286867e/original.png?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original4.png"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/127596c6-c669-496e-9337-01e1547d703b/original.png"
+      <img className="img-fluid card-logo" src="assets/original12.png"
         alt=""
       />
     ),
@@ -130,12 +130,12 @@ export const HeroCardsData = [
   {
     id:5,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/b655a524-e8fd-4016-999c-6d525fa817fc/original.jpeg?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original5.jpeg"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/273dc24c-5b5f-45d9-83d3-5db578bdce79/original.gif"
+      <img className="img-fluid card-logo" src="assets/original13.gif"
         alt=""
       />
     ),
@@ -161,12 +161,12 @@ export const HeroCardsData = [
   {
     id:6,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/2f647353-4394-4a41-9e42-835b62a6e52c/original.jpeg?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original6.jpeg"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/273dc24c-5b5f-45d9-83d3-5db578bdce79/original.gif"
+      <img className="img-fluid card-logo" src="assets/original13.gif"
         alt=""
       />
     ),
@@ -192,12 +192,12 @@ export const HeroCardsData = [
   {
     id:7,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/61cec052-6b2a-4be2-88c3-621905b974e2/original.png?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original7.png"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/9af2e6a6-412a-42f8-af60-5385ac2face0/original.png"
+      <img className="img-fluid card-logo" src="assets/original14.png"
         alt=""
       />
     ),
@@ -223,12 +223,12 @@ export const HeroCardsData = [
   {
     id:8,
     topImage: (
-      <img className="img-fluid card-img-top" src="https://d2vi0z68k5oxnr.cloudfront.net/1395c586-92f5-4992-97fa-48027fdf2cc0/original.png?d=sm-cover"
+      <img className="img-fluid card-img-top"  src="assets/original8.png"
         alt=""
       />
     ),
     logo: (
-      <img className="img-fluid card-logo" src="https://d2vi0z68k5oxnr.cloudfront.net/f144497f-8cbd-4a73-b6d1-c3d45210b5b6/original.webp"
+      <img className="img-fluid card-logo" src="assets/original15.webp"
         alt=""
       />
     ),

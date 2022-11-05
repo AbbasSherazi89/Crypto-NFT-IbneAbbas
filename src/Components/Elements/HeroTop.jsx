@@ -26,7 +26,7 @@ const HeroTop = () => {
   return (
     <>
       <div className="hero-top py-4 px-4">
-        <h3 className="py-5">Top Collections</h3>
+        <h3 className="pt-2">Top Collections</h3>
         <Carousel
           responsive={responsive}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
