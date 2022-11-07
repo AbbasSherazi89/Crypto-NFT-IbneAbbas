@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 // import {Data} from './Data'
 import { GiNestedHexagons } from "react-icons/gi";
 import { BsCheckCircle } from "react-icons/bs";
+import {BiSortAlt2} from 'react-icons/bi'
+import {MdArrowDropDown} from 'react-icons/md'
 
 const data = [
   {
@@ -133,8 +135,8 @@ const MarketPlace = () => {
           <div className="row top-row pt-3 ">
             <div className="col-md-6"></div>
             <div className="col-md-6 top-col-2 ">
-              <button className="btn btn-outline-primary top-row-btns ms-auto">
-                Sort By
+              <button className="btn btn-outline-primary top-row-btns ms-auto d-flex">
+                <BiSortAlt2 /> <span className="mx-2"> Sort </span><MdArrowDropDown/>
               </button>
               <button className="btn btn-outline-primary top-row-btns">
                 Sort By

@@ -363,13 +363,19 @@
     justify-content: right;
   }
   .top-row-btns {
-    width: 10rem;
+    width: 8rem;
     height: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
     color: white;
     font-weight: 700;
     border: 1px solid white;
     border-radius: 40px;
+  }
+  .top-row-btns:hover{
+    background-color: grey;
   }
 
   a{
@@ -382,7 +388,7 @@
  
   .card {
     margin-top: 1rem;
-    height: 32rem;
+    height: 31rem;
     border-radius: 20px;
     border: 0;
    

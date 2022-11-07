@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="container-fluid">
           <div className="row py-3">
-            <div className="col-md-8">
+            <div className="col-md-8 mb-3">
               <p>Copyright © 2022 Crypto.com. All rights reserved.</p>
             </div>
             <div className="col-md-4">
