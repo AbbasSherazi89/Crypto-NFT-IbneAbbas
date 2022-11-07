@@ -1,10 +1,18 @@
-import React from 'react'
-import Hero from '../Components/Elements/Hero'
+import React from 'react' 
+import Dashboard from '../Components/Elements/Dashboard';
+import HeroTop from '../Components/Elements/HeroTop';
+import MarketPlace from '../Components/Elements/MarketPlace';
+import Toggle from '../Components/Elements/Toggle';
+
 
 const Home = () => {
   return (
     <>
-        <Hero/>
+    <HeroTop/>
+    {/* <Dashboard/> */}
+    <Toggle/>
+    {/* <MarketPlace/> */}
+    
     </>
   )
 }

@@ -9,11 +9,15 @@
       display: none;
     }
   }
-  .sidebar {
-    display: none;
-  }
+
+.display-none-last{
+  display: none !important;
+}
   .hero {
     width: calc(100% - 0px) !important;
+  }
+  .display-md-none{
+    display: none !important;
   }
 }
 
@@ -21,6 +25,12 @@
 .navbar {
   background-color: #0b1426;
   color: white !important;
+  .navbar-toggler{
+    color: #555;
+  }
+  .navbar-toggler-icon{
+    background-color: white;
+  }
   .nav-link {
     color: white !important;
     font-weight: 600;
@@ -53,17 +63,50 @@
 }
 
 //////////////////////////////////////////////////////////Sidebar////////////////////////////////////////////////////////////////
+.drawer-bg{
+  background-color: #0B1426;
+}
+
+
+.chakra-modal__body{
+  background-color: #0b1426;
+}
+
 
 .sidebar {
+  // position: sticky;
+  
+  .menu{
+    overflow-y: scroll !important;
+    &::-webkit-scrollbar {
+      width: 6px !important;
+    }
+    &::-webkit-scrollbar-track {
+      background: #555;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px !important;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
   background-color: #0b1426;
   color: white;
-  width: 300px;
-  height: 170vh;
-  position: absolute;
-  // overflow: auto;
+  .sidbar-col{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+
+  
+  }
   .bOQEtf {
     border-right: 0px;
-    width: 100%;
+    width: 70%;
    
   }
   .fpTHfu {
@@ -81,6 +124,12 @@
   a:hover {
     color: white;
   }
+
+  .sub-menu
+{
+  border-top: 1px solid grey;
+  border-bottom:1px solid  grey;
+}
 }
 
 //////////////////////////////////////////////////////////Hero Top////////////////////////////////////////////////////////////////
@@ -125,16 +174,23 @@
       height: 50px;
     }
   }
-  .card:hover {
-    transform: scale(1.2);
-  }
+  // .rounded-circle:hover {
+  //   transform: scale(1.2);
+    
+  // }
   .card1 {
     background-image: url("./Media/original1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+      
+    }
   }
   .card2 {
     background-image: url("./Media/original2.png");
@@ -142,7 +198,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card3 {
     background-image: url("./Media/original3.jpeg");
@@ -150,7 +211,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card4 {
     background-image: url("./Media/original4.jpeg");
@@ -158,7 +224,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card5 {
     background-image: url("./Media/original5.png");
@@ -166,7 +237,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card6 {
     background-image: url("./Media/original6.png");
@@ -174,7 +250,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card7 {
     background-image: url("./Media/original7.png");
@@ -182,7 +263,12 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
   .card8 {
     background-image: url("./Media/original8.png");
@@ -190,15 +276,26 @@
     background-position: center;
     background-size: cover;
     opacity: 100%;
-    height: 15rem;
+    height: 13rem;
+    margin-left: 1rem;
+    &:hover{
+      transform: scale(1.2);
+      transition: .5s;
+    }
   }
 }
 
 //////////////////////////////////////////////////////////Card Data////////////////////////////////////////////////////////////////
 .card-data{
-  width: calc(100% - 300px);
-  float: right;
   position: relative;
+  .card-img-left{
+    border-radius: 20px;
+    width: 100%;
+  }
+  .under-Img{
+    text-decoration: none;
+    font-weight: 700;
+  }
   .top-icons{
     display: flex;
     margin-top: 25px;
@@ -220,6 +317,29 @@
   a{
     color: #0b1426;
   }
+  .back-button{
+    text-decoration: none;
+    color: blue;
+  }
+ 
+    .card-last-btn{
+      width: 14rem !important;
+      background-color: #11A0FA;
+      border: none;
+      font-weight: 600;
+      padding: 7px 0px !important;
+    }
+  
+}
+
+.filter-btn{
+  width: 7rem;
+  padding: 1.5rem;
+  border-radius: 30px !important;
+  background-color: #323C52 !important;
+  .filter-icon{
+    font-size: 40px;
+  }
 }
 
 
@@ -228,20 +348,22 @@
 .hero {
   background-color: #0b1426;
   color: white;
-  width: calc(100% - 300px);
-  float: right;
-  position: relative;
-  .top-row {
+  // width: calc(100% - 300px);
+  // float: right;
+  // position: relative;  
+  .top-col-2 {
     display: flex;
-    .top-row-btns {
-      width: 10rem;
-      height: 3.3rem;
-      margin-left: 10px;
-      color: white;
-      font-weight: 700;
-      border: 1px solid white;
-      border-radius: 40px;
-    }
+    align-items: right;
+    justify-content: right;
+  }
+  .top-row-btns {
+    width: 10rem;
+    height: 3.3rem;
+    margin-left: 10px;
+    color: white;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 40px;
   }
 
   a{
@@ -254,7 +376,7 @@
  
   .card {
     margin-top: 1rem;
-    height: 30rem;
+    height: 32rem;
     border-radius: 20px;
     border: 0;
    
@@ -306,7 +428,15 @@
 .footer-container {
   background-color: #0b1426;
   color: white;
-  width: calc(100% - 300px);
-  float: right;
-  position: relative;
+
+  .footer-icons{
+font-size: 40px;
+  }
+  ul li{
+    list-style: none;
+  }
+  ul li a{
+    text-decoration: none;
+    color: grey;
+  }
 }

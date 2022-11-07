@@ -6,15 +6,15 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 6,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 5,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 3,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -27,14 +27,17 @@ const HeroTop = () => {
     <>
       <div className="hero-top py-4 px-4">
         <h3 className="pt-2">Top Collections</h3>
+        
         <Carousel
           responsive={responsive}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
           infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={3000}
+          // autoPlay={true}
+          // autoPlaySpeed={3000}
+          rewind={true}
+          arrows={true}
         >
-          <div className="col-10">
+
             <div className="card card1 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -52,9 +55,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="col-10">
             <div className="card card2 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -72,9 +73,8 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
+       
 
-          <div className="col-10">
             <div className="card card3 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -92,9 +92,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-10">
+ 
             <div className="card card4 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -112,9 +110,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-10">
+       
             <div className="card card5 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -132,9 +128,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-10">
+  
             <div className="card card6 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -152,9 +146,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-10">
+ 
             <div className="card card7 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -172,9 +164,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-10">
+   
             <div className="card card8 position-relative">
               <div className="card-body ">
                 <div className="card-ft">
@@ -192,7 +182,7 @@ const HeroTop = () => {
                 </div>
               </div>
             </div>
-          </div>
+          
         </Carousel>
       </div>
     </>
